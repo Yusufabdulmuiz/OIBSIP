@@ -171,13 +171,18 @@ body{
    width: 100%; 
    text-align: center;
    padding: 35% 2%;
-background: #626061;
+background: var(--main-color);
 height:50vh;
 
   }
  .footer p {
      font-size: 18px;
+    color:white;
  } 
+.footer p a {
+ Color:white;
+
+}
   .footer h4 {
       margin-bottom: 25px;
       margin-top: 10px;
@@ -263,9 +268,8 @@ height:50vh;
      text-align:center;
      padding:2%;
  } 
- .footer p a {
-     text-decoration:none;
-     color:var(--main-color);
+ .footer p a { 
+     color:var(--color);
  }
   .footer h4 {
       margin-bottom: 25px;
