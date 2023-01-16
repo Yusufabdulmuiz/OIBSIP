@@ -1,0 +1,462 @@
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color:#009688; 
+}
+#home {
+    background: linear-gradient(rgba(0,0,0,0.5),var(--main-color)),url('');
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    
+}
+
+.logo {
+    width: 170px;
+    position:absolute;
+    top:4%;
+}
+.bn-text{
+    padding-left: 20px;
+    color:white;
+    padding-top:200px;
+    display: block;
+    line-height: 1.5;
+    letter-spacing: 1;
+}
+.bn-text h2 {
+    font-size: 50px;
+    font-family: 'Russo One', sans-serif; 
+}
+.bn-text h1 {
+  font-family: 'Russo One', sans-serif; 
+  font-size: 100px;
+}
+
+.bn-text p{
+    font-style:italic;
+    font-size:35px ;
+}
+
+.bn-btn {
+    margin:50px auto 0;
+}
+.bn-btn a {
+    text-decoration:none;
+    color:white;
+    padding:12px ;
+    border: .5px solid white;
+    position: relative;
+    z-index:1;
+    transition:color 0.5s;
+    font-size: 30px;
+}
+.bn-btn a span {
+    width:0%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background:white;
+    z-index:-1;
+    transition:0.5s;
+}
+.bn-btn a:hover span{
+    width:100%;
+    
+}
+.bn-btn a:hover {
+    color:black;
+}
+#nav {
+   position:fixed;
+   top:0;
+   right:-100%;
+   height:100vh;
+   width:100%;
+   background:var(--main-color);
+   z-index:2;
+   transition:0.5s;
+   padding-top: 7%;
+}
+nav ul li {
+    margin:50px 20px;
+    list-style:none;
+    text-align:center;
+
+}
+nav ul li a {
+    text-decoration:none;
+    color:white;
+    font-size: 15px;
+    font-weight: 700;
+
+    
+}
+#burger {
+    width:70px;
+    height:70px;
+    position:fixed;
+    top:7%;
+    right:7px;
+    background:var(--main-color);
+    z-index:3;
+    border-radius:4px;
+    text-align:center;
+}
+#burger img {
+   padding-top:0 ;
+}
+
+/* About section */
+#about {
+    width:100%;
+    padding:70px 0;
+}
+.head {
+    text-align:center;
+    
+}
+.head h1 {
+    color:var(--main-color);
+    position:relative;
+    z-index:1;
+    display:inline-block;
+   font-size: 40px;
+   margin:6% auto;
+}
+.head h1::after {
+    content:"";
+    width:50px;
+    height:45px;
+    background:linear-gradient(var(--main-color), #ffffff);
+    position: absolute;
+    top:-10px;
+    left:0 ;
+    z-index:-1;
+    transform:rotate(10deg);
+    border-top-left-radius:40px;
+    border-bottom-right-radius:40px;
+}
+
+.abt-text {
+    width:80%;
+    margin:6% auto;
+    background:var(--main-color) ;
+    text-align:center;
+    padding:4%;
+    color:white;
+    border-top-left-radius:20px;
+    border-bottom-right-radius:20px;
+}
+.abt-text:hover{
+    box-shadow:0px 0px 20px 0px rgba(0,0,0,0.4) ; 
+}
+.abt-text h1 {
+font-size: 50px;
+margin: 25px auto;
+}
+.abt-text p {
+    font-size:20px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+.abt-text a {
+    text-decoration:none;
+    Color: #162c81;
+font-weight:bold;
+}
+
+
+/* My Skills section */
+#skills {
+    padding:50px 0;
+    width:100%;
+}
+.skills {
+    width:70%;
+    text-align:center;
+    margin:8% auto;
+    position:relative;
+     background:var(--main-color);
+    border-radius:10px;
+}
+.skills .skill {
+   
+    margin:9% auto;
+    padding:20%;
+    color:white;
+    width:40%;
+    height:30px;
+    border-radius:10px;
+    text-align:center;
+    
+}
+.skills .skill>h1 {
+    opacity:1;
+    transition:1s;
+    text-align:center;
+    font-size:50px;
+    text-align: center;
+}
+
+ .skills:hover .skill>h1{
+     opacity:0;
+ } 
+  .over {
+      position:absolute;
+      top:0;
+      width:0%;
+      height:100%;
+      background:rgba(255, 255, 255,0.5);
+      border-radius:10px;
+      opacity:0;
+      transition:1s;
+  }
+
+
+.skills:hover .over{
+   opacity:1; 
+   width:100%;
+}
+.info {
+    position:absolute;
+    bottom:30%;
+    left:-50%;
+    width:60%;
+   font-size:20px; 
+   transform:translateX(-50%);
+  text-align:center;
+  opacity:0;  
+  transition:1s;
+  color:white;
+    
+}
+hr{
+    background: white;
+    height:2px;
+    width:60%;
+    margin:7px auto;
+    border:none;
+}
+
+.skills:hover .info{
+    opacity:1;
+    left:50%;
+}
+
+
+/* projects */
+
+#projects {
+  padding:50px 0;
+  width: 100%;
+}
+
+.prj-list {
+    width:60%;
+    text-align:center;
+    margin:30px auto;
+    padding:20px auto;
+}
+.prj-list img{
+    border-radius:10px;
+}
+.descr {
+    margin:5px auto;
+    width: 50%;
+   color:white; 
+   background:var(--main-color);
+    opacity:1;
+    border-radius:10px;
+   padding:5px; 
+   text-align:center;
+
+    
+}
+
+
+.descr h2 {
+font-size:20px;  
+   
+}
+
+
+.descr p {
+font-size:16px; 
+padding: 10px auto; 
+text-align: center;
+   
+}
+
+.link {
+    width: 10%;
+    margin:10px auto;
+    text-align:center;
+    font-size:12px;
+    transition:2s;
+     border: 2px solid var(--main-color);
+    border-radius:10px;
+}
+
+.link a {
+    text-decoration:none;
+    padding: 30px 4px ;
+    font-size:15px;
+     color:var(--main-color);
+    
+
+}
+.link:hover {
+    background: transparent;
+    transform:rotateX(360deg);
+}
+/**********footer**********/
+.footer{
+    width: 100%;
+    background: var(--main-color);
+    text-align: center;
+    color: white;
+}
+
+.social {
+    text-align: center;
+    padding: 8% 4% 0 ;
+}
+.social h1 {
+    opacity:0.7;
+}
+.social img {
+ width: 25%;
+ margin: 4% auto;
+}
+.footer p {
+    padding-bottom: 2%;
+    opacity: 0.7;
+    font-size: 9px;
+}
+
+@media(max-width:1000px) {
+
+
+
+    .logo {
+        width: 100px;
+    }
+
+.bn-text {
+    padding-top:80%;
+}
+.bn-text h2 {
+   font-size: 15px;
+}
+    .bn-text h1 {  
+  font-size:20px;
+
+}
+.bn-text p{
+    font-size:15px ;
+}
+
+.skills .skill>h1 {
+    font-size:13px;
+}
+#home {
+    
+}
+
+
+.bn-btn {
+    margin:40px auto 0;
+}
+.bn-btn a {
+    padding:3px auto ;
+    font-size: 15px;
+}
+
+    .abt-text{
+        border-radius:none;
+    }
+
+#burger {
+    width:50px;
+    height:50px;
+    position:fixed;
+    top:7%;
+    right:7%;
+}
+#burger img {
+   width:50;
+}
+
+/***about**/
+.abt-text h1 {
+font-size:20px;
+margin: 15px auto;
+}
+.abt-text p {
+    font-size:12px;
+    line-height: 1.2;
+    padding-bottom: 5px;
+    text-align: justify;
+}
+
+.head h1 {
+   font-size: 20px;
+  
+}
+.head h1::after {
+    content:"";
+    width:40px;
+    height:30px;
+}
+.info {
+    font-size: 8px;
+    bottom:12%;
+}
+
+
+
+.descr {
+    margin:5px auto;
+    width: 50%;
+   color:white; 
+   background:var(--main-color);
+    opacity:1;
+    border-radius:10px;
+   padding:5px auto; 
+   text-align:center;
+
+    
+}
+
+
+.descr h2 {
+font-size:10px;  
+   
+}
+
+
+.descr p {
+font-size:8px; 
+padding: 10px auto; 
+text-align: center;
+   
+}
+
+.link {
+   padding: 3% 3%;
+   
+}
+
+.link a {
+    font-size:8px;
+     
+    
+
+}
